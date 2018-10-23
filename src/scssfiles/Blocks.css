@@ -1,0 +1,16 @@
+.l-leftBlock {
+  position: absolute;
+  left: 10rem; }
+
+.l-rightBlock {
+  position: absolute;
+  right: 10rem; }
+
+.c-block {
+  width: 25rem;
+  background-color: #547b84;
+  color: white;
+  padding: 3rem;
+  -webkit-box-shadow: 30px 30px 0px 0px rgba(84, 123, 132, 0.4);
+  -moz-box-shadow: 30px 30px 0px 0px rgba(84, 123, 132, 0.4);
+  box-shadow: 30px 30px 0px 0px rgba(84, 123, 132, 0.4); }

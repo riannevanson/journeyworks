@@ -1,0 +1,45 @@
+create-react-app my-react-app
+
+npm i -S node-sass-chokidar
+
+in package.json:
+
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path .src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+     "start-js": "react-scripts start",
+     "start": "npm-run-all -p watch-css start-js",
+     "build": "npm run build-css && react-scripts-build",
+     "test": "react-scripts test",
+     "eject": "react-scripts eject"
+  },
+
+  npm install --save npm-run-all
+
+  npm start
+
+  create app.scss
+
+        .welcome{
+            color:red;
+            &--home{
+                background: gray;
+            }
+        }
+
+ class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+        <div className="App">
+        <div className="welcome">welcome!</div>
+        <div className="welcome--home">home</div>
+      </div>
+        </header>
+      </div>
+    );
+  }
+}
+
+is also possible for sass!

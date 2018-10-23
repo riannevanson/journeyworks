@@ -1,0 +1,139 @@
+
+.l-header{
+ margin-bottom: 5rem;
+}
+
+.l-bergenparallax{
+    padding-top: 25rem;;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    display: flex; 
+    justify-content: center;
+
+}
+
+.achtergrondBergen{
+ &--01{
+    z-index: 3;
+    background-image: url("../lib/images/achtergrondBergen01.svg");
+    min-height: 500px;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    height: 100rem;
+    left: -5px;
+}
+ &--02{
+    z-index: 2;
+    background-image: url("../lib/images/achtergrondBergen02.svg");
+    min-height: 500px;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    height: 900px;
+    left: -5px;
+ }
+ &--03{
+    z-index: 1;
+    background-image: url("../lib/images/achtergrondBergen03.svg");
+    min-height: 500px;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    height: 900px;
+    left: -5px;
+ }
+}
+
+.l-logo{
+    height: 400px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.c-logo{
+   
+
+    &__balloon{
+        position: relative;
+        height: 200px;
+        animation-name: logoBalloon;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    &__bottom{
+        position: relative;
+        height: 300px;
+        width: 300px;
+        top: -30px;
+    }
+    &__title{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    
+    }
+    &__ondertitel{
+        text-align: center;
+    }
+    
+}
+
+@keyframes logoBalloon {
+    0% {top: 0px;}
+    50% {top: -30px;}
+    100%{top: 0px;}
+}
+
+
+
+
+
+h1 { 
+    // color: $primary-color; 
+    font-size: 5rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    font-size: 0.5rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
