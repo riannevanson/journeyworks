@@ -1,24 +1,37 @@
 import * as React from "react";
 import { connect } from "react-redux";
+import Menu from "../components/Menu";
 
 class Portfolio extends React.PureComponent {
   render() {
+    let links = [
+      {
+        label: "home",
+        link: "/",
+        active: false
+      },
+      {
+        label: "over ons",
+        link: "/overons",
+        active: false
+      },
+      {
+        label: "portfolio",
+        link: "/portfolio",
+        active: true
+      },
+      {
+        label: "contact",
+        link: "/contact",
+        active: false
+      }
+    ];
+
     return (
-      <section className="l-leftBlock">
-        <div className="c-block">
-          <p className="c-block__txt">
-            <strong>Wij van Journeyworks</strong>
-            <br />
-            maken mooie websites en we helpen bij het stroomlijnen van de
-            customer journey. Een goede customer journey is net dat beetje extra
-            dat ervoor zorgt dat uw product opvalt en meer mensen het product
-            zullen afnemen. Bent u benieuwd naar wat wij voor u kunnen
-            betekenen? Maak met 1 druk op de knop een afspraak met ons onder het
-            genot van een drankje naar keuze!
-          </p>
-          <p>ho</p>
-        </div>
-      </section>
+      <div>
+        <Menu links={links} />
+        <section className="">Portfolio</section>
+      </div>
     );
   }
 }
