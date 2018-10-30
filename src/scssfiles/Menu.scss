@@ -5,13 +5,9 @@
 .container {
     width: 1000px;
     margin: 20px 0;
-    position: absolute;
+    position: fixed;
 }
 
-.center {
-    // display: flex;
-    // justify-content: center;
-}
 
 .hide {
     display: none;
@@ -22,7 +18,7 @@
     border-radius: 8px;
     width: 200px;
     height: 200px;
-    padding: 0 2rem;;
+    padding: 0 2rem;
     position: relative;
 }
 
@@ -42,6 +38,7 @@
 
 .menu__list-item {
     height: 2rem;
+    padding-top: 1rem;
     }
 
 .menu__list-item:last-child {
