@@ -8,14 +8,7 @@ class Header extends React.PureComponent {
     return (
       <section className="l-header">
         
-        <section className="l-banner">
-          <div className="l-bergenparallax">
-            <div className="achtergrondBergen--01" />
-            <div className="achtergrondBergen--02" />
-            <div className="achtergrondBergen--03" />
-          </div>
-
-          <div className="l-logo">
+          <div className="l-pageTitle l-pageTitle--home">
             <img
               src={logoBalloon}
               alt="Logoballoon"
@@ -31,8 +24,7 @@ class Header extends React.PureComponent {
             </h2>
           </div>
         </section>
-      </section>
-    );
+     );
   }
 }
 const mapStateToProps = state => {

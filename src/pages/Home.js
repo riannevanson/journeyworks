@@ -3,8 +3,9 @@ import Header  from '../components/Header';
 import Introblock  from '../components/Introblock';
 import UXblock from '../components/UXblock';
 import { connect } from "react-redux";
-import Menu from "../components/Menu"
-
+import Menu from "../components/Menu";
+import Background from "../components/Background"
+import PortfolioHome from '../components/PortfolioHome'
 
 class Home extends React.PureComponent{
   render() {
@@ -25,10 +26,16 @@ class Home extends React.PureComponent{
 
     return (
       <div>
+        <Background />
         <Menu links={links}/>
         <Header/>
+        <div className="l-pageBlocks">
         <Introblock/>
         <UXblock/>
+        </div>
+        <PortfolioHome/>
+        <div className="l-pageBlocks">
+        </div>
 
       </div>
     );

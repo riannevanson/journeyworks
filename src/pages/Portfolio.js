@@ -1,6 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import Menu from "../components/Menu";
+import Background from "../components/Background";
 
 class Portfolio extends React.PureComponent {
   render() {
@@ -29,8 +30,16 @@ class Portfolio extends React.PureComponent {
 
     return (
       <div>
+        <Background />
         <Menu links={links} />
-        <section className="">Portfolio</section>
+        <div className="l-pageTitle">
+      <h1 className="c-logo c-logo__title">Portfolio</h1>
+            <h2 className="c-logo__ondertitel">
+              Hieronder vindt u een greep uit <br/>
+              ons portfolio
+            </h2>
+      
+      </div>
       </div>
     );
   }

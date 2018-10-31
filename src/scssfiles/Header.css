@@ -6,7 +6,7 @@
   z-index: -1;
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 50rem;
   display: flex;
   justify-content: center; }
 
@@ -16,8 +16,8 @@
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 100rem;
+  width: 110rem;
+  height: 70rem;
   left: -5px; }
 
 .achtergrondBergen--02 {
@@ -26,8 +26,8 @@
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 900px;
+  width: 110rem;
+  height: 50rem;
   left: -5px; }
 
 .achtergrondBergen--03 {
@@ -36,17 +36,19 @@
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 900px;
+  width: 110rem;
+  height: 50rem;
   left: -5px; }
 
-.l-logo {
+.l-pageTitle {
   height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px; }
+  padding-top: 200px; }
+  .l-pageTitle--home {
+    padding-top: 100px; }
 
 .c-logo__balloon {
   position: relative;
@@ -77,39 +79,3 @@
     top: -30px; }
   100% {
     top: 0px; } }
-
-h1 {
-  font-size: 5rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h3 {
-  font-size: 1rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h4 {
-  font-size: 0.8rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h5 {
-  font-size: 0.5rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-p {
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }

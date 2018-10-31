@@ -5,6 +5,11 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+.l-pageBlocks {
+  padding: 5rem 15rem;
+  display: flex;
+  justify-content: space-between; }
+
 body {
   padding: 0;
   margin: 0;
@@ -24,9 +29,9 @@ body {
 .menu {
   background-color: rgba(255, 255, 255, 0.336);
   border-radius: 8px;
-  width: 200px;
-  height: 200px;
-  padding: 0 2rem;
+  width: 100px;
+  height: 100%;
+  padding: 0 2rem 2rem 2rem;
   position: relative; }
 
 .menu__right {
@@ -109,7 +114,7 @@ body {
   z-index: -1;
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 50rem;
   display: flex;
   justify-content: center; }
 
@@ -119,8 +124,8 @@ body {
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 100rem;
+  width: 110rem;
+  height: 70rem;
   left: -5px; }
 
 .achtergrondBergen--02 {
@@ -129,8 +134,8 @@ body {
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 900px;
+  width: 110rem;
+  height: 50rem;
   left: -5px; }
 
 .achtergrondBergen--03 {
@@ -139,17 +144,19 @@ body {
   min-height: 500px;
   background-size: cover;
   position: absolute;
-  width: 110%;
-  height: 900px;
+  width: 110rem;
+  height: 50rem;
   left: -5px; }
 
-.l-logo {
+.l-pageTitle {
   height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px; }
+  padding-top: 200px; }
+  .l-pageTitle--home {
+    padding-top: 100px; }
 
 .c-logo__balloon {
   position: relative;
@@ -181,49 +188,8 @@ body {
   100% {
     top: 0px; } }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h3 {
-  font-size: 1rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h4 {
-  font-size: 0.8rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-h5 {
-  font-size: 0.5rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-p {
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0; }
-
-.l-leftBlock {
-  position: absolute;
-  left: 10rem; }
-
-.l-rightBlock {
-  position: absolute;
-  right: 10rem; }
+.l-rightBlockOne {
+  margin-top: 20rem; }
 
 .c-block {
   width: 25rem;
@@ -242,7 +208,7 @@ h1 {
   padding: 0; }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 200;
   margin: 0;
   padding: 0; }
@@ -266,7 +232,21 @@ h5 {
   padding: 0; }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 200;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  line-height: 2rem; }
+
+.flex-grid {
+  display: flex; }
+
+.flex-grid .col {
+  flex: 1; }
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-grid-thirds .col {
+  width: 32%; }

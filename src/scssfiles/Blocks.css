@@ -1,10 +1,5 @@
-.l-leftBlock {
-  position: absolute;
-  left: 10rem; }
-
-.l-rightBlock {
-  position: absolute;
-  right: 10rem; }
+.l-rightBlockOne {
+  margin-top: 20rem; }
 
 .c-block {
   width: 25rem;
