@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 .l-pageBlocks {
   padding: 5rem 15rem;
   display: flex;
