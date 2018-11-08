@@ -2,12 +2,12 @@ import * as React from "react";
 import PropTypes from 'prop-types';
 
 const Card = ({portfolioImg}) => {
-    const {index, picture, city, address, bedrooms, bathrooms, carSpaces} = portfolioImg;
+    const {index, picture, txt} = portfolioImg;
     return (
         <div id={`card-${index}`} className="c-card">
-            <img className="c-card__img" src={picture} alt={city} />
+            <img className="c-card__img" src={picture} alt={txt} />
             <div className="details">
-                <span className="index">{index+1}</span>
+                <span className="index">{txt}</span>
                
         
             </div>

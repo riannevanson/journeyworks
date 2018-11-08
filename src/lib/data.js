@@ -1,5 +1,18 @@
 import LogoJourneyWorks from "./images/LogoJourneyWorks.png"
 import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+import AnneDesktop from "./images/AnneDesktopgroot.png";
+import ANNEmobiel from "./images/mockupAnnemobiel.png"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+// import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
 
 
 const data = {
@@ -7,8 +20,8 @@ const data = {
     {
         "_id": "1",
         "index": 0,
- 
-        "picture": LogoJourneyWorks,
+        "txt":"ANNE",
+        "picture": ANNEmobiel,
     
     },
     {
