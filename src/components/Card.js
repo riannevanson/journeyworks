@@ -1,8 +1,8 @@
 import * as React from "react";
 import PropTypes from 'prop-types';
 
-const Card = ({property}) => {
-    const {index, picture, city, address, bedrooms, bathrooms, carSpaces} = property;
+const Card = ({portfolioImg}) => {
+    const {index, picture, city, address, bedrooms, bathrooms, carSpaces} = portfolioImg;
     return (
         <div id={`card-${index}`} className="c-card">
             <img className="c-card__img" src={picture} alt={city} />
@@ -16,7 +16,7 @@ const Card = ({property}) => {
 }
 
 Card.propTypes = {
-    property: PropTypes.object.isRequired
+    portfolioImg: PropTypes.object.isRequired
 }
 
 export default Card;

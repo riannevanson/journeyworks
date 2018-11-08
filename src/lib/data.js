@@ -1,40 +1,42 @@
 import LogoJourneyWorks from "./images/LogoJourneyWorks.png"
+import duurzameweekheel from "./images/mockupDuurzameweekheel.jpg"
+
 
 const data = {
-    "properties": [
+    "portfolioImgs": [
     {
         "_id": "1",
         "index": 0,
  
-        "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg",
+        "picture": LogoJourneyWorks,
     
     },
     {
         "_id": "2",
         "index": 1,
  
-        "picture": LogoJourneyWorks,
+        "picture": duurzameweekheel,
     
     },
     {
         "_id": "3",
         "index": 2,
  
-        "picture": LogoJourneyWorks,
+        "picture": duurzameweekheel,
     
     },
     {
         "_id": "4",
         "index": 3,
  
-        "picture": LogoJourneyWorks,
+        "picture": duurzameweekheel,
     
     },
     {
         "_id": "5",
         "index": 4,
  
-        "picture": LogoJourneyWorks,
+        "picture":duurzameweekheel,
     
     },
     {

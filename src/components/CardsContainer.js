@@ -8,55 +8,56 @@ class CardsContainer extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      properties: data.properties,
-      property: data.properties[0]
+      portfolioImgs: data.portfolioImgs,
+      portfolioImg: data.portfolioImgs[0]
     };
   }
 
-  nextProperty = () => {
-    const newIndex = this.state.property.index + 1;
+  nextportfolioImg = () => {
+    const newIndex = this.state.portfolioImg.index + 1;
     this.setState({
-      property: data.properties[newIndex]
+      portfolioImg: data.portfolioImgs[newIndex]
     });
   };
 
-  prevProperty = () => {
-    const newIndex = this.state.property.index - 1;
+  prevportfolioImg = () => {
+    const newIndex = this.state.portfolioImg.index - 1;
     this.setState({
-      property: data.properties[newIndex]
+      portfolioImg: data.portfolioImgs[newIndex]
     });
   };
-
-
 
   render() {
-    const {properties, property} = this.state;
+    const { portfolioImgs, portfolioImg } = this.state;
     return (
-      
       <div className="l-cards-slider">
-       
-          <button
-            onClick={() => this.prevProperty()}
-            disabled={property.index === 0}
-          >
-            Prev
-          </button>
-          <button
-            onClick={() => this.nextProperty()}
-            disabled={property.index === data.properties.length - 1}
-          >
-            Next
-          </button>
+        <button
+          className="btn btn--prev"
+          onClick={() => this.prevportfolioImg()}
+          disabled={portfolioImg.index === 0}
+        >
+          <h2>&lt; Prev</h2>
+        </button>
+        <button
+          className="btn btn--nxt"
+          onClick={() => this.nextportfolioImg()}
+          disabled={portfolioImg.index === data.portfolioImgs.length - 1}
+        >
+          <h2> Next  &gt;</h2>
+        </button>
 
-
-       <div className={`c-cards-slider active-slide-${property.index}`}>
-        <div className="l-cards-slider-wrapper" style={{
-                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
-                }}>
-                  {
-                    properties.map(property => <Card key={property._id} property={property} />)
-                  }
-                </div>
+        <div className={`c-cards-slider active-slide-${portfolioImg.index}`}>
+          <div
+            className="l-cards-slider-wrapper"
+            style={{
+              transform: `translateX(-${portfolioImg.index *
+                (100 / portfolioImgs.length)}%)`
+            }}
+          >
+            {portfolioImgs.map(portfolioImg => (
+              <Card key={portfolioImg._id} portfolioImg={portfolioImg} />
+            ))}
+          </div>
         </div>
       </div>
     );
